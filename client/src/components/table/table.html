@@ -1,0 +1,64 @@
+<div class="container">
+    <div ng-controller="TableCtrl" class="container movie-container table-container col-md-6">
+        <h2>Movie Table</h2>
+        <table>
+            <th>Title</th>
+            <th>Director</th>
+            <th>Genre</th>
+            <th>Year</th>
+            <tr ng-repeat="movie in movieData">
+                <td class="movie-title">{{ movie.Title}}</td>
+                <td class="movie-director">{{movie.Director}}</td>
+                <td class="movie-genre">{{movie.Genre}}</td>
+                <td class="movie-year">{{movie.Year}}</td>
+                <td class="remove-btn">
+                    <a href="" ng-click="removeMovie(movie)">X</a>
+                </td>
+            </tr>
+        </table>
+        <div class="row">
+            <div class="movie-input">
+                <form name="movie-form" ng-submit="addMovie(movie)">
+                    <input type="text" placeholder="Title" ng-model="movie.Title" required>
+                    <input type="text" placeholder="Director" ng-model="movie.Director" required>
+                    <input type="text" placeholder="Genre" ng-model="movie.Genre" required>
+                    <input type="number" placeholder="Year" ng-model="movie.Year" required>
+                    <button ng-disabled="movie-form.$invalid" type="submit">Save Changes</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div ng-controller="ShowCtrl" class="container show-container col-md-6 ">
+        <h2>Show Table</h2>
+        <table>
+            <th>Title</th>
+            <th>Director</th>
+            <th>Genre</th>
+            <th>Year</th>
+            <tr ng-repeat="show in showData">
+                <td class="show-title">{{ show.Title}}</td>
+                <td class="show-director">{{show.Director}}</td>
+                <td class="show-genre">{{show.Genre}}</td>
+                <td class="show-year">{{show.Year}}</td>
+                <td class="remove-btn">
+                    <a href="" ng-click="removeShow(show)">X</a>
+                </td>
+            </tr>
+        </table>
+        <div class="row">
+            <div class="show-input">
+                <form name="show-form" ng-submit="addShow(show)">
+                    <input type="text" placeholder="Title" ng-model="show.Title" required>
+                    <input type="text" placeholder="Director" ng-model="show.Director" required>
+                    <input type="text" placeholder="Genre" ng-model="show.Genre" required>
+                    <input type="number" placeholder="Year" ng-model="show.Year" required>
+                    <button ng-disabled="show-form.$invalid" type="submit">Save Changes</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    
+</div>

@@ -1,0 +1,53 @@
+table {
+    border-collapse: collapse;
+    margin: auto;
+}
+
+table, th, td {
+    border: 1px solid black;
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+}
+
+.movie-container {  
+   
+}
+
+.button-container {
+  padding-left: 85px;
+  padding-right: 85px;
+  float: left;
+}
+
+input {
+  float: left;
+  width: 25%;
+  margin: auto;
+}
+
+.row {
+  padding-top: 25px;
+  margin-left: 85px;
+  margin-right: 85px;
+}
+
+.show-container {
+  float: left;
+}
+
+.remove-btn {
+  color: red;
+}
+
+input[type='number'] {
+    -moz-appearance:textfield;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
