@@ -4,13 +4,13 @@ html {
 
 body {
     background: url('../image/background.jpg') no-repeat center center fixed;
-    background-size: 100%;
     background-repeat: no-repeat;
     font: 400 13px/1.4 'Quicksand', 'Helvetica Neue', Helvetica, Arial;
     font-family: Quicksand, 'Helvetica Neue', Helvetica, Arial;
     font-size: 13px;
     color: white;
     height: 100%;
+    background-size: cover;
 }
 
 .main {
@@ -34,11 +34,6 @@ body {
 	
 }
 
-
-ul{
-	list-style-type: none;
-}
-
 a {
     color: yellow;
     text-decoration: none;
@@ -48,5 +43,5 @@ a {
 .hello {
 	width: 500px;
 	float: left;
-	font-size: 18px;
+	font-size: 14px;
 }
