@@ -1,0 +1,1 @@
+import './car-renter.js';/car-renter.js');
