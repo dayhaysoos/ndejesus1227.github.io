@@ -28,11 +28,11 @@
   text-align: center;
   margin: 0 auto;
   width: 37%;
-  float: left;
+  display: inline-block;
   font-size: 32px; }
 
 #my-face {
-  float: left;
+  display: inline-block;
   border-radius: 50%;
   max-width: 250px;
   margin-left: 25%; }
@@ -61,7 +61,7 @@ body {
   margin: 0 auto;
   max-width: 1000px;
   padding: 0 40px;
-  height: 100%; }
+  height: 450px; }
 
 .section-header {
   font-size: 64px;
