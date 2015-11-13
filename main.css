@@ -34,7 +34,7 @@
 #home {
   background-size: cover;
   background-attachment: fixed;
-  margin-top: 100px; }
+  margin-top: 77px; }
   #home .content-container {
     background-color: #2E5794;
     color: #BC9605; }
@@ -57,6 +57,9 @@
   border-radius: 50%;
   max-width: 250px;
   margin-left: 25%; }
+
+#about {
+  color: #2E5794; }
 
 #tool-list {
   list-style: none;
@@ -107,6 +110,7 @@ body {
 
 .section-paragraph {
   width: 50%;
-  margin: 0 auto; }
+  margin: 0 auto;
+  line-height: 2em; }
 
 /*# sourceMappingURL=main.css.map */
