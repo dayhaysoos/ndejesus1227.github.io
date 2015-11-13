@@ -16,14 +16,12 @@
       margin-left: 4%; }
 
 #home {
-  height: 100%;
   background-size: cover;
   background-attachment: fixed;
   margin-top: 100px; }
   #home .content-container {
-    background-color: rgba(25, 25, 25, 0.9);
-    color: white;
-    height: 100%; }
+    background-color: #2E5794;
+    color: #BC9605; }
 
 #name {
   font-size: 64px;
