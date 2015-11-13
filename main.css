@@ -73,7 +73,8 @@
 
 .tool-img {
   height: 150px;
-  width: 150px; }
+  width: 150px;
+  margin-top: 35px; }
 
 #resume-icon {
   height: 200px;
@@ -111,6 +112,7 @@ body {
 .section-paragraph {
   width: 50%;
   margin: 0 auto;
-  line-height: 2em; }
+  line-height: 2em;
+  font-size: 18px; }
 
 /*# sourceMappingURL=main.css.map */
