@@ -51,6 +51,11 @@
   height: 150px;
   width: 150px; }
 
+#resume-icon {
+  height: 200px;
+  width: 200px;
+  padding-left: 30px; }
+
 html {
   height: 100%; }
 
@@ -60,8 +65,7 @@ body {
 .content-container {
   margin: 0 auto;
   max-width: 1000px;
-  padding: 0 40px;
-  height: 450px; }
+  padding: 0 40px; }
 
 .section-header {
   font-size: 64px;
@@ -69,10 +73,8 @@ body {
   margin-bottom: 15px; }
 
 .site-section {
-  display: block;
   width: 100%;
   box-sizing: border-box;
-  min-height: 100%;
   margin-bottom: 15px; }
 
 .font {
