@@ -16,7 +16,14 @@
       margin-left: 4%; }
 
 #home {
+  height: 100%;
+  background-size: cover;
+  background-attachment: fixed;
   margin-top: 100px; }
+  #home .content-container {
+    background-color: rgba(25, 25, 25, 0.9);
+    color: white;
+    height: 100%; }
 
 #name {
   font-size: 64px;
@@ -63,9 +70,9 @@ body {
   height: 100%; }
 
 .content-container {
-  margin: 0 auto;
+  margin: 50px auto;
   max-width: 1000px;
-  padding: 0 40px; 
+  padding: 0 40px;
   text-align: center; }
 
 .section-header {
