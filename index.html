@@ -1,14 +1,14 @@
 <?php
 
 
-$name = $_POST['name'];
-$email = $_POST['email'];
+$name = $_POST['form-name'];
+$email = $_POST['form-email'];
 $message = $_POST['message'];
 
-	$to = 'youremail@domain.com';
+	$to = 'ndejesus@1227@gmail.com.com';
 	$subject = 'the subject';
 	$message = 'FROM: '.$name.' Email: '.$email.'Message: '.$message;
-	$headers = 'From: youremail@domain.com' . "\r\n";
+	$headers = 'From: ndejesus1227@gmail.com' . "\r\n";
 
 if (filter_var($email, FILTER_VALIDATE_EMAIL)) { 
     mail($to, $subject, $message, $headers); 

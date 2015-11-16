@@ -2,7 +2,7 @@ $(document).ready(function() {
 
     $('#submit').click(function() {
 
-        $.post("send.php", $("#mycontactform").serialize(), function(response) {
+        $.post("send.php", $("#contact-form").serialize(), function(response) {
             $('#success').html(response);
             //$('#success').hide('slow');
         });
