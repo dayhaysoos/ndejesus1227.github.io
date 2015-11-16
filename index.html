@@ -1,3 +1,24 @@
+<?php
+
+
+$name = $_POST['name'];
+$email = $_POST['email'];
+$message = $_POST['message'];
+
+	$to = 'youremail@domain.com';
+	$subject = 'the subject';
+	$message = 'FROM: '.$name.' Email: '.$email.'Message: '.$message;
+	$headers = 'From: youremail@domain.com' . "\r\n";
+
+if (filter_var($email, FILTER_VALIDATE_EMAIL)) { 
+    mail($to, $subject, $message, $headers); 
+	echo "Your email was sent!"; 
+}else{
+	echo "Invalid Email, please provide an correct email.";
+}
+	
+?>
+
 <!DOCTYPE html>
 <head>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
@@ -10,8 +31,6 @@
 			<ul>
 				<li class="nav-item"><a href="#Home">Home</a></li>
 				<li class="nav-item"><a href="#About">About</a></li>
-				<li class="nav-item"><a href="#Resume">Resume</a></li>
-				<li class="nav-item"><a href="#Portfolio">Portfolio</a></li>
 				<li class="nav-item"><a href="#Contact">Contact</a></li>
 			</ul>
 		</div>
@@ -29,16 +48,16 @@
 			<div class="section-header">About</div>
 			<div class="section-paragraph">In the summer of 2014 I decided I wanted to become a front end web developer. I learned the fundamentals of HTML/CSS and Jquery taking <a id="GA" href="https://generalassemb.ly/">General Assembly's</a> part time course. From there I have been learning about as much web technology as I can, including best practices.</div>
 			<ul id="tool-list">Things I use<br>
-					<li id="html" class="tool">
-						<img class="tool-img" src="img/html.png" alt="html">
-					</li>
-					<li id="css" class="tool">
-						<img class="tool-img" src="img/css.png" alt="css">
-					</li>
-					<li id="js" class="tool">
-						<img class="tool-img" src="img/js.png" alt="js">
-					</li>
-					<li id="jq" class="tool">
+				<li id="html" class="tool">
+					<img class="tool-img" src="img/html.png" alt="html">
+				</li>
+				<li id="css" class="tool">
+					<img class="tool-img" src="img/css.png" alt="css">
+				</li>
+				<li id="js" class="tool">
+					<img class="tool-img" src="img/js.png" alt="js">
+				</li>
+				<li id="jq" class="tool">
 					<img class="tool-img" src="img/jquery.png" alt="jq">
 				</li>
 				<li id="angular" class="tool">
@@ -47,42 +66,52 @@
 				<li id="react" class="tool">
 					<img class="tool-img" src="img/react.png" alt="react">
 				</li>
-					<li id="gulp" class="tool">
-						<img class="tool-img" src="img/gulp.png" alt="gulp-logo">
-					</li>
-					<li id="bootstrap" class="tool">
-						<img class="tool-img" src="img/bootstrap.png" alt="bootstrap-logo">
-					</li>
-					<li id="ui-router" class="tool">
-						<img class="tool-img" src="img/ui-router.png" alt="ui-router">
-					</li>
-					<li id="moment" class="tool">
-						<img class="tool-img" src="img/moment-js.png" alt="moment">
-					</li>
-					<li id="git" class="tool">
-						<img class="tool-img" src="img/git.png" alt="git">
-					</li>
-					<li id="sass" class="tool">
-						<img class="tool-img" src="img/sass.png" alt="sass">
-					</li>
-					<li id="babel" class="tool">
-						<img class="tool-img" src="img/babel.png" alt="babel">
-					</li>
-					<li id="browserify" class="tool">
-						<img class="tool-img" src="img/browserify.png" alt="browserify">
-					</li>
-				</ul>
-			</div>
-		</section>
-
-	<section id="resume" class="site-section">
-		<div class="content-container">
-			<div class="section-header">Resume</div>
-		<a href="Nick-Resume.docx"><img id="resume-icon" src="img/resume.png" alt="Resume"></a>
+				<li id="gulp" class="tool">
+					<img class="tool-img" src="img/gulp.png" alt="gulp-logo">
+				</li>
+				<li id="bootstrap" class="tool">
+					<img class="tool-img" src="img/bootstrap.png" alt="bootstrap-logo">
+				</li>
+				<li id="ui-router" class="tool">
+					<img class="tool-img" src="img/ui-router.png" alt="ui-router">
+				</li>
+				<li id="moment" class="tool">
+					<img class="tool-img" src="img/moment-js.png" alt="moment">
+				</li>
+				<li id="git" class="tool">
+					<img class="tool-img" src="img/git.png" alt="git">
+				</li>
+				<li id="sass" class="tool">
+					<img class="tool-img" src="img/sass.png" alt="sass">
+				</li>
+				<li id="babel" class="tool">
+					<img class="tool-img" src="img/babel.png" alt="babel">
+				</li>
+				<li id="browserify" class="tool">
+					<img class="tool-img" src="img/browserify.png" alt="browserify">
+				</li>
+			</ul>
 		</div>
 	</section>
-<section id="portfolio" class="site-section"></section>
-<section id="contact" class="site-section"></section>
+	<!--<section id="resume" class="site-section">
+			<div class="content-container">
+					<div class="section-header">Resume</div>
+				<a href="Nick-Resume.docx"><img id="resume-icon" src="img/resume.png" alt="Resume"></a>
+			</div>
+	</section>-->
+	<div class="site-section" id="contact">
+		<form action="" method="post" id="contact-form" >
+			<label for="name">Name:</label><br />
+			<input type="text" name="name" id="form-name" /><br />
+			<label for="email">Email:</label><br />
+			<input type="text" name="email" id="form-email" /><br />
+			<label for="message">Message:</label><br />
+			<textarea name="message" id="message"></textarea><br />
+			<input type="button" value="send" id="submit" /><div id="success" style="color:red;"></div>
+		</form>
+	</div>
 </body>
 </html>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-alpha1/jquery.min.js"></script>
+
+<script src="main.js"></script>
