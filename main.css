@@ -77,12 +77,37 @@
   margin-top: 35px; }
 
 #resume-icon {
-  height: 200px;
-  width: 200px;
-  padding-left: 30px; }
+  height: 40px;
+  width: 40px;
+  display: inline-block;
+  vertical-align: middle; }
 
 #contact {
-  text-align: center; }
+  color: #BC9605;
+  background-color: #191919;
+  padding-bottom: 72px; }
+
+#contact-info {
+  list-style: none;
+  text-align: center;
+  font-family: 'Archivo Black', sans-serif; }
+
+#resume-li {
+  margin-left: 40px;
+  color: #BC9605;
+  font-family: 'Archivo Black', sans-serif; }
+
+.contact-li a {
+  color: #BC9605;
+  font-family: 'Archivo Black', sans-serif; }
+
+.contact-li a:visited {
+  text-decoration: none;
+  color: #BC9605; }
+
+.contact-li a:hover {
+  text-decoration: none;
+  color: #2E5794; }
 
 * {
   font-family: sans-serif; }

@@ -1,24 +1,3 @@
-<?php
-
-
-$name = $_POST['form-name'];
-$email = $_POST['form-email'];
-$message = $_POST['message'];
-
-	$to = 'ndejesus@1227@gmail.com.com';
-	$subject = 'the subject';
-	$message = 'FROM: '.$name.' Email: '.$email.'Message: '.$message;
-	$headers = 'From: ndejesus1227@gmail.com' . "\r\n";
-
-if (filter_var($email, FILTER_VALIDATE_EMAIL)) { 
-    mail($to, $subject, $message, $headers); 
-	echo "Your email was sent!"; 
-}else{
-	echo "Invalid Email, please provide an correct email.";
-}
-	
-?>
-
 <!DOCTYPE html>
 <head>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
@@ -100,15 +79,12 @@ if (filter_var($email, FILTER_VALIDATE_EMAIL)) {
 			</div>
 	</section>-->
 	<div class="site-section" id="contact">
-		<form action="" method="post" id="contact-form" >
-			<label for="name">Name:</label><br />
-			<input type="text" name="name" id="form-name" /><br />
-			<label for="email">Email:</label><br />
-			<input type="text" name="email" id="form-email" /><br />
-			<label for="message">Message:</label><br />
-			<textarea name="message" id="message"></textarea><br />
-			<input type="button" value="send" id="submit" /><div id="success" style="color:red;"></div>
-		</form>
+		<div class="section-header">Contact</div>
+		<ul id="contact-info">
+			<li class="contact-li"><a href="mailto:ndejesus1227@gmail.com">E-mail</a></li>
+			<li class="contact-li"><a href="https://www.linkedin.com/in/nicholas-dejesus-95673245">LinkedIn</a></li>
+			<li id="resume-li" class="contact-li">Resume<a href="Nick-Resume.docx"><img id="resume-icon" src="img/resume.png" alt="Resume"></a></li>
+		</ul>
 	</div>
 </body>
 </html>
