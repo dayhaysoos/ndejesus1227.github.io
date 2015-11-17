@@ -85,16 +85,13 @@
 #contact {
   color: #BC9605;
   background-color: #191919;
-  padding-bottom: 72px; }
+  padding-bottom: 72px;
+  font-size: 24px;
+  padding-top: 48px; }
 
 #contact-info {
   list-style: none;
   text-align: center;
-  font-family: 'Archivo Black', sans-serif; }
-
-#resume-li {
-  margin-left: 40px;
-  color: #BC9605;
   font-family: 'Archivo Black', sans-serif; }
 
 .contact-li a {
