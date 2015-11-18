@@ -13,4 +13,11 @@ $(document).ready(function() {
 		preventDefault: true
 	});
 
+	$('#home-nav').smoothScroll({
+		scrollTarget: '#home',
+		easing: 'swing',
+		speed: 400,
+		preventDefault: true
+	});
+
 });
