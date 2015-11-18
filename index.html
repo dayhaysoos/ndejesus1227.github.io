@@ -8,15 +8,15 @@
 	<header>
 		<div id="nav">
 			<ul>
-				<li class="nav-item"><a href="#Home">Home</a></li>
-				<li class="nav-item"><a href="#About">About</a></li>
-				<li class="nav-item"><a href="#Contact">Contact</a></li>
+				<li class="nav-item"><a id="home-nav" href="#Home">Home</a></li>
+				<li class="nav-item"><a id="about-nav" href="#About">About</a></li>
+				<li class="nav-item"><a id="contact-nav" href="#Contact">Contact</a></li>
 			</ul>
 		</div>
 	</header>
 	<section id="home" class="site-section">
 		<div class="content-container">
-			<div id="name">Nick DeJesus</div>
+			<div id="name">{Nick DeJesus}</div>
 			
 			<p id="intro-paragraph">Budding web developer. Passionate about Angular, React, future web standards, HTML/CSS and working towards mastering my craft. I'm looking for an opportunity to shine.</p>
 			<img id="my-face" src="img/me.jpg" alt="me">
@@ -24,7 +24,7 @@
 	</section>
 	<section id="about" class="site-section">
 		<div class="content-container">
-			<div class="section-header">About</div>
+			<div class="section-header">{About}</div>
 			<div class="section-paragraph">In the summer of 2014 I decided I wanted to become a front end web developer. I learned the fundamentals of HTML/CSS and Jquery taking <a id="GA" href="https://generalassemb.ly/">General Assembly's</a> part time course. From there I have been learning about as much web technology as I can, including best practices.</div>
 			<ul id="tool-list">Things I use<br>
 				<li id="html" class="tool">
@@ -79,7 +79,7 @@
 			</div>
 	</section>-->
 	<div class="site-section" id="contact">
-		<div class="section-header">Contact</div>
+		<div class="section-header">{Contact}</div>
 		<ul id="contact-info">
 			<li class="contact-li"><a href="mailto:ndejesus1227@gmail.com"><i class="fa fa-envelope-o"></i></a></li>
 			<li class="contact-li"><a href="https://www.linkedin.com/in/nicholas-dejesus-95673245"><i class="fa fa-linkedin"></i></a></li>
@@ -89,5 +89,5 @@
 </body>
 </html>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-alpha1/jquery.min.js"></script>
-
+<script src="smoothScroll.js"></script>
 <script src="main.js"></script>
