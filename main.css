@@ -5,7 +5,9 @@
   position: fixed;
   top: 0;
   left: 0;
-  background-color: rgba(25, 25, 25, 0.9); }
+  background-color: rgba(25, 25, 25, 0.9);
+  height: 60px;
+  line-height: 20px; }
   #nav ul {
     float: left;
     list-style: none;
